@@ -1,0 +1,50 @@
+[
+  {
+    "Platform Parent Dato Id": "23768",
+    "Platform Dato Id": "24138",
+    "Platform Dato Name": "Random Europe",
+    "Platform mission Id": "111112",
+    "Platform submission Id": "638687",
+    "Platform submission Flight Id": "863524",
+    "Start Date": "2017-12-01",
+    "End Date": "2017-12-02",
+    "Platform Compensation": 109.0909,
+    "Total Value": 909.0909,
+    "Goal": "200000.0000",
+    "Value Information": {
+      "Platform Compensation": [
+        {
+          "Platform mission Id": "111112",
+          "Platform submission Id": "638687",
+          "Platform submission Flight Id": "863524",
+          "Value Rate": "14.0000",
+          "Value": 109.0909
+        }
+      ]
+    }
+  },
+  {
+    "Platform Parent Dato Id": "23768",
+    "Platform Dato Id": "24138",
+    "Platform Dato Name": "Random Europe",
+    "Platform mission Id": "111113",
+    "Platform submission Id": "638687",
+    "Platform submission Flight Id": "863524",
+    "Start Date": "2017-12-01",
+    "End Date": "2017-12-02",
+    "Platform Compensation": 109.0909,
+    "Total Value": 909.0909,
+    "Goal": "200000.0000",
+    "Value Information": {
+      "Platform Compensation": [
+        {
+          "Platform mission Id": "111113",
+          "Platform submission Id": "638687",
+          "Platform submission Flight Id": "863524",
+          "Value Rate": "12.0000",
+          "Value": 109.0909
+        }
+      ]
+    }
+  }
+]

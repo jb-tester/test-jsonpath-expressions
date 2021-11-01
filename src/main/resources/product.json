@@ -1,0 +1,598 @@
+{
+  "name": "IntelliJ IDEA",
+  "includeBuildToVersion": false,
+  "patchesDownloadBaseUrl": "https://download.jetbrains.com/idea",
+  "downloadReleaseLink": "https://www.jetbrains.com/idea/download",
+  "downloadPreviousReleaseLink": "https://www.jetbrains.com/idea/download/previous.html",
+  "downloadEapLink": "https://www.jetbrains.com/idea/nextversion",
+  "editions": [
+    {
+      "name": "IntelliJ IDEA Ultimate",
+      "code": "IIU",
+      "intellijProductCode": "IU",
+      "categories": [
+        "IDE"
+      ],
+      "description": "Capable and ergonomic Java IDE",
+      "tags": [ "java", "kotlin", "groovy", "scala", "android", "js", "sql", "databases" ],
+      "types": [ "code" ],
+      "link": "https://www.jetbrains.com/idea",
+      "uninstallFeedbackLink": "https://www.jetbrains.com/idea/uninstall/?edition=IU-{version}",
+      "salesCode": "II",
+      "distributions": {
+        "linux": {
+          "name": "Linux",
+          "extension": "tar.gz"
+        },
+        "linuxJBR11": {
+          "name": "Linux with bundled JBR 11",
+          "extension": "tar.gz"
+        },
+        "linuxJBR8": {
+          "name": "Linux with bundled JBR 8",
+          "extension": "tar.gz"
+        },
+        "linuxWithoutJBR": {
+          "name": "Linux without JBR",
+          "extension": "tar.gz"
+        },
+        "mac": {
+          "name": "macOS",
+          "extension": "dmg"
+        },
+        "macJBR11": {
+          "name": "macOS with Bundled JBR 11",
+          "extension": "dmg"
+        },
+        "macJBR8": {
+          "name": "macOS with bundled JBR 8",
+          "extension": "dmg"
+        },
+        "macM1": {
+          "name": "macOS Apple Silicon",
+          "extension": "dmg"
+        },
+        "macWithJBR": {
+          "name": "macOS with Bundled JBR",
+          "extension": "dmg"
+        },
+        "windows": {
+          "name": "Windows",
+          "extension": "exe"
+        },
+        "windowsJBR11": {
+          "name": "Windows with Bundled JBR 11",
+          "extension": "exe"
+        },
+        "windowsJBR8": {
+          "name": "Windows with Bundled JBR 8",
+          "extension": "exe"
+        },
+        "windowsZip": {
+          "name": "Windows ZIP Archive",
+          "extension": "zip"
+        },
+        "windowsZipJBR11": {
+          "name": "Windows ZIP Archive with Bundled JBR 11",
+          "extension": "zip"
+        },
+        "windowsZipJBR8": {
+          "name": "Windows ZIP Archive with Bundled JBR 8",
+          "extension": "zip"
+        },
+        "sourcesArchive": {
+          "name": "Sources Archive",
+          "extension": "zip"
+        },
+        "thirdPartyLibrariesJson": {
+          "name": "Used Third-Party Libraries",
+          "extension": "third-party-libraries.json"
+        }
+      }
+    },
+    {
+      "name": "IntelliJ IDEA Community Edition",
+      "code": "IIC",
+      "intellijProductCode": "IC",
+      "categories": [
+        "IDE"
+      ],
+      "description": "Capable and ergonomic Java IDE",
+      "link": "https://www.jetbrains.com/idea",
+      "uninstallFeedbackLink": "https://www.jetbrains.com/idea/uninstall/?edition=IC-{version}",
+      "distributions": {
+        "linux": {
+          "name": "Linux",
+          "extension": "tar.gz"
+        },
+        "linuxWithoutJBR": {
+          "name": "Linux without JBR",
+          "extension": "tar.gz"
+        },
+        "linuxJBR11": {
+          "name": "Linux with bundled JBR 11",
+          "extension": "tar.gz"
+        },
+        "linuxJBR8": {
+          "name": "Linux with bundled JBR 8",
+          "extension": "tar.gz"
+        },
+        "mac": {
+          "name": "macOS",
+          "extension": "dmg"
+        },
+        "macJBR11": {
+          "name": "macOS with Bundled JBR 11",
+          "extension": "dmg"
+        },
+        "macJBR8": {
+          "name": "macOS with Bundled JBR 8",
+          "extension": "dmg"
+        },
+        "macM1": {
+          "name": "macOS Apple Silicon",
+          "extension": "dmg"
+        },
+        "macWithJBR": {
+          "name": "macOS with bundled JBR",
+          "extension": "dmg"
+        },
+        "windows": {
+          "name": "Windows",
+          "extension": "exe"
+        },
+        "windowsJBR11": {
+          "name": "Windows with Bundled JBR 11",
+          "extension": "exe"
+        },
+        "windowsJBR8": {
+          "name": "Windows with Bundled JBR 8",
+          "extension": "exe"
+        },
+        "windowsZip": {
+          "name": "Windows ZIP Archive",
+          "extension": "zip"
+        },
+        "windowsZipJBR11": {
+          "name": "Windows ZIP Archive with Bundled JBR 11",
+          "extension": "zip"
+        },
+        "windowsZipJBR8": {
+          "name": "Windows ZIP Archive with Bundled JBR 8",
+          "extension": "zip"
+        },
+        "sourcesArchive": {
+          "name": "Sources Archive",
+          "extension": "zip"
+        },
+        "thirdPartyLibrariesJson": {
+          "name": "Used Third-Party Libraries",
+          "extension": "third-party-libraries.json"
+        }
+      }
+    }
+  ],
+  "rules": [
+    {
+      "sinceBuild": "0",
+      "untilBuild": "183.5152.99999",
+      "downloads": {
+        "IIU": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{version}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{version}-no-jdk.{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "macJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jdk.{extension}"
+          }
+        },
+        "IIC": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{version}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{version}-no-jdk.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jdk.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}"
+          }
+        }
+      }
+    },
+    {
+      "comment": "Introduced thirdPartyLibrariesJson",
+      "sinceBuild": "183.5153",
+      "untilBuild": "183.99999",
+      "downloads": {
+        "IIU": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{version}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{version}-no-jdk.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jdk.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jdk.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          }
+        },
+        "IIC": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{version}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{version}-no-jdk.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jdk.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jdk.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          }
+        }
+      }
+    },
+    {
+      "comment": "Introduced JBR11 builds",
+      "sinceBuild": "191",
+      "untilBuild": "191.99999",
+      "downloads": {
+        "IIU": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "windowsJBR11": "https://download.jetbrains.com/idea/ideaIU-{version}-jbr11.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{version}.win.{extension}",
+            "windowsZipJBR11": "https://download.jetbrains.com/idea/ideaIU-{version}-jbr11.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "macJBR11": "https://download.jetbrains.com/idea/ideaIU-{version}-jbr11.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linuxJBR11": "https://download.jetbrains.com/idea/ideaIU-{version}-jbr11.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{version}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "windowsZipJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "macJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "windowsZipJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "macJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxJBR11": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr11.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          }
+        },
+        "IIC": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "windowsJBR11": "https://download.jetbrains.com/idea/ideaIC-{version}-jbr11.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{version}.win.{extension}",
+            "windowsZipJBR11": "https://download.jetbrains.com/idea/ideaIC-{version}-jbr11.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "macJBR11": "https://download.jetbrains.com/idea/ideaIC-{version}-jbr11.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linuxJBR11": "https://download.jetbrains.com/idea/ideaIC-{version}-jbr11.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{version}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsJBR11": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr11.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "windowsZipJBR11": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr11.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "macJBR11": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr11.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxJBR11": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr11.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsJBR11": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr11.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "windowsZipJBR11": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr11.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "macJBR11": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr11.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxJBR11": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr11.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          }
+        }
+      }
+    },
+    {
+      "comment": "Introduced JBR11 (default) builds",
+      "sinceBuild": "192",
+      "untilBuild": "199.99999",
+      "downloads": {
+        "IIU": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "windowsJBR8": "https://download.jetbrains.com/idea/ideaIU-{version}-jbr8.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{version}.win.{extension}",
+            "windowsZipJBR8": "https://download.jetbrains.com/idea/ideaIU-{version}-jbr8.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "macJBR8": "https://download.jetbrains.com/idea/ideaIU-{version}-jbr8.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linuxJBR8": "https://download.jetbrains.com/idea/ideaIU-{version}-jbr8.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{version}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsJBR8": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr8.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "windowsZipJBR8": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr8.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "macJBR8": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr8.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxJBR8": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr8.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsJBR8": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr8.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "windowsZipJBR8": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr8.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "macJBR8": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr8.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxJBR8": "https://download.jetbrains.com/idea/ideaIU-{build}-jbr8.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          }
+        },
+        "IIC": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "windowsJBR8": "https://download.jetbrains.com/idea/ideaIC-{version}-jbr8.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{version}.win.{extension}",
+            "windowsZipJBR8": "https://download.jetbrains.com/idea/ideaIC-{version}-jbr8.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "macJBR8": "https://download.jetbrains.com/idea/ideaIC-{version}-jbr8.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linuxJBR8": "https://download.jetbrains.com/idea/ideaIC-{version}-jbr8.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{version}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{version}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsJBR8": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr8.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "windowsZipJBR8": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr8.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "macJBR8": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr8.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxJBR8": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr8.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsJBR8": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr8.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "windowsZipJBR8": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr8.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "macJBR8": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr8.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxJBR8": "https://download.jetbrains.com/idea/ideaIC-{build}-jbr8.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          }
+        }
+      }
+    },
+    {
+      "comment": "Removed JBR8 builds",
+      "sinceBuild": "201",
+      "untilBuild": "203.6682.115",
+      "downloads": {
+        "IIU": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{version}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{version}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          }
+        },
+        "IIC": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{version}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{version}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          }
+        }
+      }
+    },
+    {
+      "comment": "Add Apple Silicon",
+      "sinceBuild": "203.6682.116",
+      "downloads": {
+        "IIU": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{version}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "macM1": "https://download.jetbrains.com/idea/ideaIU-{version}-aarch64.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{version}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{version}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "macM1": "https://download.jetbrains.com/idea/ideaIU-{build}-aarch64.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIU-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "macM1": "https://download.jetbrains.com/idea/ideaIU-{build}-aarch64.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIU-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIU-{build}-no-jbr.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIU-{build}-{extension}"
+          }
+        },
+        "IIC": {
+          "release": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{version}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "macM1": "https://download.jetbrains.com/idea/ideaIC-{version}-aarch64.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{version}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{version}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{version}-{extension}"
+          },
+          "eap": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "macM1": "https://download.jetbrains.com/idea/ideaIC-{build}-aarch64.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          },
+          "rc": {
+            "windows": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "windowsZip": "https://download.jetbrains.com/idea/ideaIC-{build}.win.{extension}",
+            "mac": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "macM1": "https://download.jetbrains.com/idea/ideaIC-{build}-aarch64.{extension}",
+            "linux": "https://download.jetbrains.com/idea/ideaIC-{build}.{extension}",
+            "linuxWithoutJBR": "https://download.jetbrains.com/idea/ideaIC-{build}-no-jbr.{extension}",
+            "sourcesArchive": "https://github.com/JetBrains/intellij-community/archive/idea/{build}.{extension}",
+            "thirdPartyLibrariesJson": "https://download.jetbrains.com/idea/ideaIC-{build}-{extension}"
+          }
+        }
+      }
+    }
+  ],
+  "feedback": "https://youtrack.jetbrains.com/issues/IDEA"
+}

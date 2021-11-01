@@ -1,0 +1,26 @@
+{
+  "name" : "name1",
+  "version": 1,
+  "features" : {
+    "part1" : {
+      "group" : "g1",
+      "id" : "Part1",
+      "description" : "xxx"
+    },
+    "part2" : {
+      "group" : "g2",
+      "id" : "Part2",
+      "description" : "yyy"
+    }
+  },
+  "devs": {
+    "dev1": {
+      "name": "vasya",
+      "age": 25
+    },
+    "dev2": {
+      "name": "masha",
+      "age": 27
+    }
+  }
+}
