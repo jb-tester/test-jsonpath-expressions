@@ -21,7 +21,7 @@ public class MainClass {
        String product = "src/main/resources/product.json";
        String foo = "src/main/resources/foo.json";
        String my = "src/main/resources/my.json";
-       
+       String testData = "src/main/resources/testData.json";
        Charset charset = StandardCharsets.UTF_8;
         //language=JSONPath
         String expr0 = "$..*";
@@ -58,6 +58,11 @@ public class MainClass {
 
         //language=JSONPath
         String expr10 = "$.p2[?(@.bar all [\"aaa\",\"bbb\",\"ccc\"])]";
+
+        //language=JSONPath
+        String testDataExpr1 = "$.person.*[?(@.mandatory_flag == true && !@.is_subfield && !(@.key =~ /last_.+?/i) && !(@.key =~ /.+?_count/i))].key";
+        //language=JSONPath
+        String testDataExpr2 = "$.person.*[?(@.mandatory_flag == true && !@.is_subfield && !(@.key =~ /last_.+?/i))].key";
         try {
             /*Processor.evaluateJsonPath(expr1,charset,intro_user);
             Processor.evaluateJsonPath(expr0,charset,json_lines);
